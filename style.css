@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+/* Reset específico para imágenes */
+img {
+  max-width: none;
+  height: auto;
+}
+
+/* Reset específico para la imagen de perfil */
+.profile-photo {
+  max-width: none !important;
+  height: auto;
+}
+
 :root {
   /* Colores */
   --primary-color: #00d4ff;
@@ -282,49 +294,25 @@ body {
   border-color: var(--primary-color);
 }
 
+/* Contenedor de imagen hero */
 .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.image-placeholder {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
-  border: 2px solid var(--border-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 120px;
-  color: var(--text-muted);
-  position: relative;
-  animation: float 6s ease-in-out infinite;
-}
-
-.image-placeholder::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.3;
-  animation: pulse 2s ease-in-out infinite;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* Estilos para la imagen de perfil */
 .profile-image {
-  width: 400px;
-  height: 400px;
+  width: 400px !important;
+  height: 400px !important;
   position: relative;
   animation: float 6s ease-in-out infinite;
   overflow: hidden;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .profile-image::before {
@@ -342,16 +330,14 @@ body {
 }
 
 .profile-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+  width: 400px !important;
+  height: 400px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
   border: 3px solid var(--border-color);
   transition: var(--transition);
   filter: grayscale(20%) brightness(1.1);
   display: block;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .profile-photo:hover {
@@ -359,6 +345,31 @@ body {
   border-color: var(--primary-color);
   filter: grayscale(0%) brightness(1.2);
   box-shadow: var(--shadow-hover);
+}
+
+/* Estilos específicos para la imagen de perfil del hero */
+.hero-profile-img {
+  width: 400px !important;
+  height: 400px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Media queries específicos para la imagen de perfil */
+@media (max-width: 768px) {
+  .hero-profile-img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-profile-img {
+    width: 250px !important;
+    height: 250px !important;
+  }
 }
 
 /* Secciones generales */
@@ -888,18 +899,18 @@ section:not(.hero) {
     flex-wrap: wrap;
   }
 
-  .image-placeholder {
-    width: 300px;
-    height: 300px;
-    font-size: 80px;
+  .hero-image {
+    max-width: 320px;
   }
 
   .profile-image {
-    width: 300px;
-    height: 300px;
+    width: 300px !important;
+    height: 300px !important;
   }
 
   .profile-photo {
+    width: 300px !important;
+    height: 300px !important;
     border-width: 2px;
   }
 
@@ -953,6 +964,21 @@ section:not(.hero) {
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .hero-image {
+    max-width: 260px;
+  }
+
+  .profile-image {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .profile-photo {
+    width: 250px !important;
+    height: 250px !important;
+    border-width: 2px;
   }
 }
 
