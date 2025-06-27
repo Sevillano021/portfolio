@@ -1,40 +1,366 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio -  Alvaro Sevillano</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Álvaro Sevillano - Desarrollador Full Stack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Álvaro Sevillano - Desarrollador Full Stack especializado en tecnologías web modernas">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Portfolio de Alvaro Sevillano</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Soy un desarrollador web apasionado por crear experiencias digitales únicas.</p>
-    </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de mi correo electrónico: sevillanocarrascoalvaro@gmail.com
-<a href="mailto: sevillanocarrascoalvaro@gmail.com
-    
-        <section id="projects">
-        <h2>Proyectos</h2>
-        <ul>
-            <li>Estoy trabajando en mi primer projecto de
-                una aplicacion para gestionar una peluqueria.</li>
-            </li>
+  <!-- Header con navegación fija -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span>A.Sevillano</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#sobremi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
-    </section>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Sección Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="subtitle">Hola, soy</span>
+          <span class="main-title">Álvaro Sevillano</span>
+          <span class="profession">DESARROLLADOR WEB JUNIOR</span>
+        </h1>
+        <p class="hero-description">
+          Desarrollador junior con gran pasión por la tecnología y el aprendizaje continuo. 
+          Trabajando en proyectos personales para fortalecer mis habilidades y crear soluciones web innovadoras.
+        </p>
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/sevillano021" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alvaro-sevillano-carrasco-746b4a189/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:sevillanocarrascoalvaro@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-placeholder">
+          <i class="fas fa-user"></i>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Sección Sobre mí -->
+  <section id="sobremi" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <div class="about-card">
+            <h3>Perfil</h3>
+            <p>
+              Desarrollador junior apasionado por la tecnología y el desarrollo web. Aunque estoy iniciando mi carrera profesional, 
+              dedico mi tiempo a aprender constantemente y trabajar en proyectos personales que me permiten aplicar y perfeccionar 
+              mis conocimientos. Mi objetivo es crear soluciones web funcionales y modernas, siempre con ganas de enfrentar nuevos 
+              retos y seguir creciendo como desarrollador.
+            </p>
+          </div>
+          
+          <div class="about-card">
+            <h3>Tecnologías que Manejo</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5 & CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React (Aprendiendo)</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js (Básico)</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>SQL & MongoDB</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-card">
+            <h3>En Constante Aprendizaje</h3>
+            <p>
+              Actualmente me encuentro desarrollando proyectos personales para fortalecer mis habilidades y construir 
+              un portafolio sólido. Cada proyecto es una oportunidad de aprender algo nuevo y aplicar las mejores prácticas 
+              del desarrollo web. Estoy comprometido con el aprendizaje continuo y siempre busco maneras de mejorar 
+              mi código y mis habilidades técnicas.
+            </p>
+            <div class="learning-items">
+              <div class="learning-item">
+                <i class="fas fa-code"></i>
+                <span>Proyectos personales activos</span>
+              </div>
+              <div class="learning-item">
+                <i class="fas fa-book-open"></i>
+                <span>Cursos online y documentación</span>
+              </div>
+              <div class="learning-item">
+                <i class="fas fa-users"></i>
+                <span>Participación en comunidades de desarrolladores</span>
+              </div>
+              <div class="learning-item">
+                <i class="fas fa-lightbulb"></i>
+                <span>Experimentación con nuevas tecnologías</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-cut"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sitio Web Peluquería & Tienda</h3>
+            <p>Página web completa para una peluquería con sistema de citas online, catálogo de productos y galería de trabajos. Incluye diseño responsivo y formularios de contacto.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-ambulance"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sistema Gestión Emergencias</h3>
+            <p>Aplicación web para gestionar servicios de emergencias y protección civil. Incluye registro de incidentes, asignación de recursos y panel de control en tiempo real.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Socket.io</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Personal</h3>
+            <p>Mi portfolio personal desarrollado desde cero. Un sitio web moderno y responsivo que muestra mis proyectos, habilidades y experiencia como desarrollador web.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Animations</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <h2 class="section-title">Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Desarrollo Frontend</h3>
+          <p>Creación de interfaces de usuario modernas, responsivas y optimizadas para la mejor experiencia del usuario.</p>
+          <ul>
+            <li>Diseño responsivo</li>
+            <li>Aplicaciones SPA</li>
+            <li>Optimización de rendimiento</li>
+            <li>Accesibilidad web</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Desarrollo Backend</h3>
+          <p>Desarrollo de APIs robustas y escalables, manejo de bases de datos y arquitectura de servidores.</p>
+          <ul>
+            <li>APIs RESTful</li>
+            <li>Bases de datos</li>
+            <li>Autenticación y seguridad</li>
+            <li>Optimización de consultas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>¡Trabajemos juntos!</h3>
+          <p>¿Tienes un proyecto en mente? Me encantaría conocer más sobre tu idea y cómo puedo ayudarte a hacerla realidad.</p>
+          
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:sevillanocarrascoalvaro@gmail.com">sevillanocarrascoalvaro@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-details">
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/alvaro-sevillano-carrasco-746b4a189/" target="_blank">Álvaro Sevillano</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <h4>GitHub</h4>
+                <a href="https://github.com/sevillano021" target="_blank">sevillano021</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Tu email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2025 Álvaro Sevillano. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/sevillano021" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alvaro-sevillano-carrasco-746b4a189/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:sevillanocarrascoalvaro@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
